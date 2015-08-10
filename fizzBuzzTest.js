@@ -20,3 +20,16 @@ describe('Should Style: Processing ', function () {
     fizzBuzz.process(15).should.equal('FizzBuzz');
   });
 });
+describe('Should Style: FizzBuzz ', function () {
+  it('of 1 is correct', function () {
+    fizzBuzz.fizzBuzz(1).should.deep.equal(['1']);
+  });
+  it('of 2 is correct', function () {
+    fizzBuzz.fizzBuzz(2).should.deep.equal(['1', '2']);
+  });
+  it('of 15 correct', function () {
+    fizzBuzz.fizzBuzz(15).should.deep.equal(['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz',
+      '13', '14', 'FizzBuzz'
+    ]);
+  });
+});
